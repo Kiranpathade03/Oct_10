@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun(name, age) {
+            this.name = "kiran"
+            this.age = 112
+        }
+
+        const person1 = new fun();
+
+
+        console.log(person1.name + " " + person1.age);
+
+
+        //sir
+        function test() {
+            function abc() {
+                this.name = "Vinay"
+            }
+            const Result = new abc();
+            console.log(Result.name);
+        }
+
+        test();
+    </script>
+</body>
+
+</html>
